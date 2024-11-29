@@ -1,0 +1,71 @@
+@import url('./style/skeleton.css');
+.cursor-pointer{
+    cursor: pointer;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+  --bg-image:linear-gradient(rgba(20, 20, 20, 0.486), rgba(17, 17, 17, 0.7)) , url("./assets/img/bg-1.jpg");
+  --blue-color:rgba(79, 127, 183, 1);
+  --border-color:rgba(255, 255, 255, 0.41);
+  --blue-color-1:#66ADFF;
+  --chat-bg-color:rgba(66, 104, 149, 0.42);
+  --chat-bg-color-1:rgb(29, 34, 36);
+  --chat-btn-color:rgb(29, 34, 36);
+  --secondary-color:rgb(160,160,160);
+  --online-green-color:#3DDE42;
+  --show-chat-color:rgba(0,0,0,0.3);
+
+  --form-bg-color:rgb(29, 34, 36);
+  --form-input-bg-color: rgb(90,90,90);
+  --input-label-color: rgb(172, 170, 170);
+
+}
+[data-theme="light"]{
+  --bg-image:linear-gradient(#ebebeb,#fff);
+  --blue-color:rgb(117, 152, 250);
+  --chat-bg-color:rgb(56, 112, 185);
+  --chat-bg-color-1:rgb(95, 95, 95);
+  --bs-light-rgb:#000;
+  --border-color:rgba(173, 173, 173, 0.41);
+  --chat-btn-color:rgba(53, 65, 77, 0.26);
+  --secondary-color:rgb(56, 56, 56);
+  --show-chat-color:rgba(128, 128, 128, 0.3);
+
+  --form-bg-color:transparent;
+  --form-input-bg-color: rgb(221, 221, 221);
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: var(--bg-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1rem);
+  }
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--chat-bg-color-1);
+    border-radius: 0.5rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--chat-bg-color-1);
+  }

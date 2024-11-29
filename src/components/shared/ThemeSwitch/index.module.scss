@@ -1,0 +1,13 @@
+.input_box{
+    input{
+        background-color: green($color: #000000);
+    }
+    label{
+        width: 2rem;
+        height: 1rem;
+        border-radius: 20%;
+    }
+    label:checked{
+        
+    }
+}
